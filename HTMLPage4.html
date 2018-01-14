@@ -1,0 +1,61 @@
+﻿<html>
+<head>
+  <meta charset="utf-8">
+  <title>forms</title>
+  <style>
+  *{
+  margin: 10px;
+  font: 14pt sans-serif;
+   border-radius: 8px; 
+  }
+	div {
+	 padding: 20px;
+	   background: #cceeff;
+		height: 500px;
+		width: 300px;
+		margin: auto;
+
+	}
+  </style>
+  </head>
+  <body>
+  <div>
+    <form action="http://ya.ru/" method="get" target="_blank">
+  <label for="login">Логин:</label>
+    </br>
+    <input required type="text" name="login" placeholder="логин"> </br>
+    <label for="login">Пароль:</label>
+  </br>
+    <input required type="password" name="pass" placeholder= "пароль"></br>
+  <label for="yes">Ваш университет:</label></br>
+  <label for="itmo"> ИТМО</label> 
+  <input  type="radio" name="univer" checked id="male" value='1' checked>
+  </br>
+  <label for="univer">Другой</label> 
+  <input  type="radio" name="univer" value='0' disabled id="female">
+</br>
+<input  type="hidden" name="action" value="getPageNumber">
+<select name="месяц" multiple>
+  <option value="1">Январь</option>
+  <option value="2">Февраль</option>
+  <option value="3">Март</option>
+  <option value="4">Апрель</option>
+  <option value="5">Май</option>
+  <option value="6">Июнь</option>
+  <option value="7">Июль</option>
+  <option value="8">Август</option>
+  <option value="9">Сентябрь</option>
+  <option value="10">Октябрь</option>
+  <option value="11">Ноябрь</option>
+  <option value="12">Декабрь</option>
+  </select>
+</br>
+<label for ="email">Почта: </label>
+</br>
+<input required type="email" name="email" id="email" placeholder="почта">
+</br>
+<button>Отправить</button>
+</form>
+</div>
+</body>
+<html>
